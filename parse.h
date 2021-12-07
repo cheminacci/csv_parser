@@ -3,15 +3,11 @@
 #include <vector>
 #include <cmath>
 #include <string>
+#include <numeric>
 
 template<typename T>
-auto Average(T& value)
-{
-	auto temp = 0 ;
-	for(size_t i : value)
-	{ temp+=i; }
-	return (temp/value.size());
-}
+	double moving_average(T& value, size_t period, size_t position)
+	{ return (std::accumulate(&value[position], &value[position+period], 0.0) / (double)period ); }
 
 struct Candle 
 {

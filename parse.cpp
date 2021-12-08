@@ -3,7 +3,8 @@
 #include "parse.h"
 
 void Parse()
-{	std::string filename;
+{	
+	std::string filename;
 	std::cout << "Please input the name of the file to be parsed\n\n";
 	std::cout << "----->\t";
 	std::cin >> filename;

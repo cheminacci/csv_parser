@@ -6,7 +6,7 @@
 #include <numeric>
 
 template<typename T>
-	double moving_average(T& value, size_t period, size_t position)
+constexpr double moving_average(T& value, size_t period, size_t position)
 	{ return (std::accumulate(&value[position], &value[position+period], 0.0) / (double)period ); }
 
 struct Candle 

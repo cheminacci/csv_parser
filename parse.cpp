@@ -98,7 +98,7 @@ void Parse()
 	std::ofstream structured_data;
 	structured_data.open(new_file_name);
 
-	for(size_t row = 0; row < lines; row++)
+	for(size_t row = 0; row != lines; row++)
 	{	
 		Position[row].date = (Data[ (row * element_per_row) + 0 ]); 
 		Position[row].time = (Data[ (row * element_per_row) + 1 ]); 

@@ -44,7 +44,6 @@ void Parse()
 			for( size_t search_position = data_buffer.find(string_to_find) ;\
 				    search_position != std::string::npos ;\
 				    search_position = data_buffer.find(string_to_find, search_position) )
-
 				{ 
 					data_buffer.replace(search_position, string_to_find.length(), string_to_replace);
 			       		++lines;	
@@ -75,7 +74,6 @@ void Parse()
 			Data.push_back(data_buffer);	
 			++storage_index;
 		}
-	
 
 	read_myfile.close();
 	newfile.close();

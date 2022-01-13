@@ -11,5 +11,5 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 set(CMAKE_CXX_FLAGS "-Wall -Wextra -Werror -Wpedantic -Wunused -Wconversion")
 
 # add the executable
-add_executable(CSVParser CSVParser.cpp)
+add_executable(CSVParser parse.cpp CSVParser.cpp)
 

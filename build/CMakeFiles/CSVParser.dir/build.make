@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cheminacci/csv_parser
+CMAKE_SOURCE_DIR = /home/cheminacci/csv_parser/src
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/cheminacci/csv_parser/build
@@ -70,32 +70,32 @@ include CMakeFiles/CSVParser.dir/progress.make
 include CMakeFiles/CSVParser.dir/flags.make
 
 CMakeFiles/CSVParser.dir/parse.cpp.o: CMakeFiles/CSVParser.dir/flags.make
-CMakeFiles/CSVParser.dir/parse.cpp.o: /home/cheminacci/csv_parser/parse.cpp
+CMakeFiles/CSVParser.dir/parse.cpp.o: /home/cheminacci/csv_parser/src/parse.cpp
 CMakeFiles/CSVParser.dir/parse.cpp.o: CMakeFiles/CSVParser.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cheminacci/csv_parser/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CSVParser.dir/parse.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CSVParser.dir/parse.cpp.o -MF CMakeFiles/CSVParser.dir/parse.cpp.o.d -o CMakeFiles/CSVParser.dir/parse.cpp.o -c /home/cheminacci/csv_parser/parse.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CSVParser.dir/parse.cpp.o -MF CMakeFiles/CSVParser.dir/parse.cpp.o.d -o CMakeFiles/CSVParser.dir/parse.cpp.o -c /home/cheminacci/csv_parser/src/parse.cpp
 
 CMakeFiles/CSVParser.dir/parse.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CSVParser.dir/parse.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cheminacci/csv_parser/parse.cpp > CMakeFiles/CSVParser.dir/parse.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cheminacci/csv_parser/src/parse.cpp > CMakeFiles/CSVParser.dir/parse.cpp.i
 
 CMakeFiles/CSVParser.dir/parse.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CSVParser.dir/parse.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cheminacci/csv_parser/parse.cpp -o CMakeFiles/CSVParser.dir/parse.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cheminacci/csv_parser/src/parse.cpp -o CMakeFiles/CSVParser.dir/parse.cpp.s
 
 CMakeFiles/CSVParser.dir/CSVParser.cpp.o: CMakeFiles/CSVParser.dir/flags.make
-CMakeFiles/CSVParser.dir/CSVParser.cpp.o: /home/cheminacci/csv_parser/CSVParser.cpp
+CMakeFiles/CSVParser.dir/CSVParser.cpp.o: /home/cheminacci/csv_parser/src/CSVParser.cpp
 CMakeFiles/CSVParser.dir/CSVParser.cpp.o: CMakeFiles/CSVParser.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cheminacci/csv_parser/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CSVParser.dir/CSVParser.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CSVParser.dir/CSVParser.cpp.o -MF CMakeFiles/CSVParser.dir/CSVParser.cpp.o.d -o CMakeFiles/CSVParser.dir/CSVParser.cpp.o -c /home/cheminacci/csv_parser/CSVParser.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CSVParser.dir/CSVParser.cpp.o -MF CMakeFiles/CSVParser.dir/CSVParser.cpp.o.d -o CMakeFiles/CSVParser.dir/CSVParser.cpp.o -c /home/cheminacci/csv_parser/src/CSVParser.cpp
 
 CMakeFiles/CSVParser.dir/CSVParser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CSVParser.dir/CSVParser.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cheminacci/csv_parser/CSVParser.cpp > CMakeFiles/CSVParser.dir/CSVParser.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cheminacci/csv_parser/src/CSVParser.cpp > CMakeFiles/CSVParser.dir/CSVParser.cpp.i
 
 CMakeFiles/CSVParser.dir/CSVParser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CSVParser.dir/CSVParser.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cheminacci/csv_parser/CSVParser.cpp -o CMakeFiles/CSVParser.dir/CSVParser.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cheminacci/csv_parser/src/CSVParser.cpp -o CMakeFiles/CSVParser.dir/CSVParser.cpp.s
 
 # Object files for target CSVParser
 CSVParser_OBJECTS = \
@@ -121,6 +121,6 @@ CMakeFiles/CSVParser.dir/clean:
 .PHONY : CMakeFiles/CSVParser.dir/clean
 
 CMakeFiles/CSVParser.dir/depend:
-	cd /home/cheminacci/csv_parser/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cheminacci/csv_parser /home/cheminacci/csv_parser /home/cheminacci/csv_parser/build /home/cheminacci/csv_parser/build /home/cheminacci/csv_parser/build/CMakeFiles/CSVParser.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/cheminacci/csv_parser/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cheminacci/csv_parser/src /home/cheminacci/csv_parser/src /home/cheminacci/csv_parser/build /home/cheminacci/csv_parser/build /home/cheminacci/csv_parser/build/CMakeFiles/CSVParser.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/CSVParser.dir/depend
 

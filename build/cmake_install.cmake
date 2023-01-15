@@ -1,4 +1,4 @@
-# Install script for directory: /home/cheminacci/csv_parser
+# Install script for directory: /home/cheminacci/csv_parser/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

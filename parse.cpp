@@ -13,7 +13,8 @@ struct Candle
 };
 
 void Parse()
-{	std::string filename;
+{	
+	std::string filename;
 	std::cout << "Please input the name of the file to be parsed\n\n";
 	std::cout << "----->\t";
 	std::getline(std::cin, filename);
@@ -29,7 +30,7 @@ void Parse()
 
 	// File Being Written to
 	std::ofstream newfile;
-	newfile.open("newcsv.txt");
+	newfile.open("temp_csv.txt");
 
 	size_t lines {0};
 	size_t storage_index {0};
@@ -64,8 +65,8 @@ void Parse()
 	read_myfile.close();
 	newfile.close();
 	
-	read_myfile.open("newcsv.txt");	
-	newfile.open("tempfile");	
+	read_myfile.open("temp_csv.txt");	
+	newfile.open("temp_file");	
 
 	// Reading the CSV File, Using comma as delimiter, Placing each value into a storage vector.
 		while(getline(read_myfile, data_buffer, ',' ) ) 

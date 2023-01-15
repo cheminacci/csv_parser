@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wall -Wextra -Werror -Wpedantic -Wunused -Wconversion -Wuninitialized -fanalyzer CMakeFiles/CSVParser.dir/parse.cpp.o CMakeFiles/CSVParser.dir/CSVParser.cpp.o -o CSVParser 

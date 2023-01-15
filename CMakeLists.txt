@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # specify compiler flags
-set(CMAKE_CXX_FLAGS "-Wall -Wextra -Werror -Wpedantic -Wunused -Wconversion")
+set(CMAKE_CXX_FLAGS "-Wall -Wextra -Werror -Wpedantic -Wunused -Wconversion -Wuninitialized -fanalyzer")
 
 # add the executable
 add_executable(CSVParser parse.cpp CSVParser.cpp)
